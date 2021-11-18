@@ -1,0 +1,35 @@
+
+.main{
+  display: flex;
+  flex-direction: column;
+
+}
+.main__header{
+  text-align: center;
+  margin-top: 35px;
+  font-weight: 500;
+}
+
+.cardlist{
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px auto;
+  text-align: center;
+  flex-wrap: wrap;
+  row-gap: 17px;
+}
+.add_btn{
+  margin-bottom: 40px;
+  width: 120px;
+  border: 1px solid white;
+  background-color: rgba(41, 212, 255, 0.562);
+}
+.btn__container{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

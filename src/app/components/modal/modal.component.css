@@ -1,0 +1,37 @@
+.card__view{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card__form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.cardview__btn_red, .cardview__btn_green, .cardview__btn_back{
+  max-width: 80px;
+  margin-top: 25px;
+}
+
+.cardview__btn_green{
+  background-color: rgb(75, 255, 144);
+  min-width: 90px;
+}
+.cardview__input, .cardview__input_content{
+  max-width: 100%;
+}
+.cardview__input_content{
+  min-height: 300px;
+  margin-top: 2px;
+}
+.btn__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardview__title{
+  font-size: 26px;
+  font-weight: 500;
+  padding: 5px;
+}

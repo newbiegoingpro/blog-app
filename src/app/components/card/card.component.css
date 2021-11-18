@@ -1,0 +1,16 @@
+.card__item{
+  width: 200px;
+  border: 1px solid lightgray;
+}
+.card__content{
+  min-height: 150px;
+  border: 1px solid lightgray;
+}
+.card__title{
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+

@@ -1,0 +1,14 @@
+<div class="card__view">
+
+  <form class="card__form">
+
+    <h1 class="cardview__title">Новая запись</h1>
+    <input class="input cardview__input" type="text" [(ngModel)]="title" name="title" >
+    <input class="input cardview__input_content" type="text" name="content" [(ngModel)]="content" placeholder="content">
+    <div class="btn__container">
+      <button class="btn cardview__btn_back" (click)="goBack()">Назад</button>
+      <button class="btn cardview__btn_green" type="submit" (click)="onSubmit()">Опубликовать</button>
+    </div>
+  </form>
+
+</div>

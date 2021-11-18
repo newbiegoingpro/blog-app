@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn{
+  min-height: 30px;
+  min-width: 70px;
+  border-radius: 10%;
+  border: none;
+
+}
+
+

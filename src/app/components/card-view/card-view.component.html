@@ -1,0 +1,24 @@
+<div class="card__view">
+
+  <form class="card__form">
+    <button class="btn cardview__btn_back" (click)="goBack()">Назад</button>
+    <h1 class="cardview__title">{{title}}</h1>
+    <input class="input cardview__input" type="text" name="title" [(ngModel)]="title" value={{title}}>
+    <input class="input cardview__input_content" type="text" name="content" [(ngModel)]="content" placeholder="content">
+    <div class="btn__container">
+      <button class="btn cardview__btn_red" type="button" (click)="togglePopup()">Удалить</button>
+      <button class="btn cardview__btn_green" type="submit" (click)="onSubmit()">Обновить</button>
+    </div>
+  </form>
+  <div class="popup" [style.display]="isOpen ? 'block' : 'none'">
+    <div class="popup__container">
+      <p class="popup__text">удалить?</p>
+      <div class="btn__container btn__container_popup">
+        <button class="popup__btn" (click)="onDeleteCard()">да</button>
+        <button class="popup__btn" (click)="togglePopup()">нет</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
