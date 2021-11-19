@@ -3,11 +3,11 @@ import { Location } from '@angular/common';
 import { CardsService } from 'src/app/services/cards.service';
 import { Card } from '../card/card';
 @Component({
-  selector: 'app-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  selector: 'app-addcard',
+  templateUrl: './addcard.component.html',
+  styleUrls: ['./addcard.component.css']
 })
-export class ModalComponent implements OnInit {
+export class AddCardComponent implements OnInit {
   title!: string;
   content!: string;
   id!: number;

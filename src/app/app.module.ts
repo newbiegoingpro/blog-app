@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { CardListComponent } from './components/card-list/card-list.component';
-import { ModalComponent } from './components/modal/modal.component';
+import { AddCardComponent } from './components/addcard/addcard.component';
 import { CardViewComponent } from './components/card-view/card-view.component';
 import { MainComponent } from './components/main/main.component';
 
@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'newPost',
-    component: ModalComponent
+    component: AddCardComponent
   }
 ]
 
@@ -29,7 +29,7 @@ const appRoutes: Routes = [
     AppComponent,
     CardComponent,
     CardListComponent,
-    ModalComponent,
+    AddCardComponent,
     CardViewComponent,
     MainComponent,
 
