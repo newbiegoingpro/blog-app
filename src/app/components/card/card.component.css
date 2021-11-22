@@ -5,6 +5,7 @@
 .card__content{
   min-height: 150px;
   border: 1px solid lightgray;
+  word-break:break-all;
 }
 .card__title{
   font-size: 18px;
