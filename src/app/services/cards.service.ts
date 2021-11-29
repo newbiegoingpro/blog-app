@@ -17,23 +17,23 @@ export class CardsService {
     { id: 8, title: 'Puerto-Rico', content: 'some content here' },
     { id: 9, title: 'Tornado', content: 'some content here' }
   ];
-  cards = this.Cards;
+
   constructor() { }
 
   //массив всех записей
   getCards():Card[]{
-    return this.cards
+    return this.Cards
   }
 
   //найти опр. запись
   getCard(id: number): Card {
-    const card = this.cards.find(c => c.id === id)!;
+    const card = this.Cards.find(c => c.id === id)!;
     console.log(card)
     return card;
   }
   //обновить запись
   updateCard(data:Card){
-    const card = this.cards.find(c => c.id === data.id)!;
+    const card = this.Cards.find(c => c.id === data.id)!;
     card.content = data.content;
     card.title = data.title;
     console.log(card)
@@ -41,12 +41,15 @@ export class CardsService {
   //создать запись
   createCard(data: Card){
     console.log('эта карточка должна быть создана и отобразиться на главной странице: ', data)
-    this.cards.unshift(data)   //unshift более вычислительно затратный, но хз как еще вставлять эл в начало
+    const arr = [data];
+    //this.cards.unshift(data)   //unshift более вычислительно затратный, но хз как еще вставлять эл в начало
+    //this.cards = arr.concat(this.cards) //как вариант
+    this.Cards = [...arr, ...this.Cards]; //еще вариант
   }
   //удалить запись
   deleteCard(id: number){
-    const cards = this.cards.filter(c => c.id !== id);
-    this.cards = cards
+    const cards = this.Cards.filter(c => c.id !== id);
+    this.Cards = cards
 
   }
 }

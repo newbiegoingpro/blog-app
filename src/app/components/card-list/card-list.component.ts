@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardsService } from '../../services/cards.service';
 import { Card } from '../card/card';
-import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
@@ -9,11 +9,10 @@ import { Router } from '@angular/router';
 
 })
 export class CardListComponent implements OnInit {
-  cards: Card[] = []; //не знаю, обязательно ли указывать тут строго как тип интерфейс Card, тк он уже указан в Cards
+  cards: Card[] = [];
 
   constructor(
     private cardsService: CardsService,
-    public router: Router
   ) {
 
   }
